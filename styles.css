@@ -33,6 +33,15 @@ nav {
     font-weight: 500;
 }
 
+button {
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+button:hover {
+    background-color: #2b4757;
+}
+
 /* NAV */
 
 .nav__logo {
@@ -41,6 +50,12 @@ nav {
     background-color: #69b8b1; 
     padding: 4px;
     border-radius: 50%;
+    transition: all 400ms;
+}
+
+.nav__logo:hover {
+    background-color: #2b4757;
+    cursor: pointer;
 }
 
 .nav__container {
@@ -76,14 +91,6 @@ nav {
     transition: all 400ms;
 }
 
-button {
-    cursor: pointer;
-    transition: all 400ms;
-}
-
-button:hover {
-    background-color: #2b4757;
-}
 
 .nav__button:hover {
     background-color: #2b4757;
