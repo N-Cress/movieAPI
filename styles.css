@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F8f8f8;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+   
+}
+
+.blue {
+    color: #69b8b1; 
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* NAV */
+
+.nav__logo {
+    height: 112px;
+    width: 112px;
+    background-color: #69b8b1; 
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.nav__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list-item {
+    margin: 0 24px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.nav__button {
+    margin: 0 12px;
+    background-color: #69b8b1;
+    padding: 16px 36px;
+    border-radius: 25px;
+    color: #fff;
+    transition: all 400ms;
+}
+
+button {
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+button:hover {
+    background-color: #2b4757;
+}
+
+.nav__button:hover {
+    background-color: #2b4757;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.header__container {
+    margin: 0 auto;
+    padding-top: 48px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__sub-title {
+    margin-top: 24px;
+}
+
+.header__img {
+    padding-top: 24px;
+    width: 720px;
+    height: 480px;
+    padding-bottom: 4px;
+}
+
+.search__container {
+    display: flex;
+    margin-top: 36px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.search__field {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #242424;
+    border-radius: 20px;
+    width: 50%;
+    padding: 18px 24px;
+    margin-right: 24px;
+    background-color: #fff;
+    font-size: 24px;
+    transition: all 300ms;
+}
+
+.search__field:hover {
+    border-color: #69b8b1;
+}
+
+.search__button {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-left: 4px;
+    border: none;
+    background-color: #69b8b1;
+
+    font-size: 44px;
+    border-radius: 15px;
+    padding: 12px 48px;
+}
