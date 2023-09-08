@@ -6,12 +6,43 @@
     <title>Document</title>
     <link href="mstyles.css" rel="stylesheet"> </link>
     <script src="movies.js"></script>
+    <script src="https://kit.fontawesome.com/524719cdfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="movieResult">
-        <div class="movie">
-            
+    <nav class="nav__background">
+        <div class="nav__container">
+            <img src="./assets/undraw_award.svg" class="nav__logo"> </img>
+                <ul class="nav__list">
+                    <li class="nav__list-item blue"> 
+                        <a> Home </a>
+                    </li>
+                    <li class="nav__list-item"> 
+                        <a> Find a movie </a>
+                    </li>
+                    <li class="nav__list-item nav__button"> 
+                        <a> CONTACT </a>
+                    </li>
+                </ul>
         </div>
-    </section>
+        <div class="nav__search">
+            <div class="browse"> Find a movie </div>
+            <div class="search__container">
+                <input class="search__field"> 
+                <button class="search__button"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+       
+       
+    </nav>
+    <header id="movie__result">
+        <div class="movie__container">
+            <div class="movie__search"> Search results: </div>
+            <div class="movie">
+            
+            </div>
+        </div>
+    </header>
 </body>
 </html>

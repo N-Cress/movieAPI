@@ -7,7 +7,7 @@ async function retrieveMovies(query) {
     const arrayResponse = jsonResponse.Search;
     const htmlTarget = document.querySelector(".movie");
     console.log(arrayResponse);
-    htmlTarget.innerHTML = arrayResponse.map((movie) => {
+    htmlTarget.innerHTML = arrayResponse.slice(0, 6).map((movie) => {
         return `
             <div class="movie__item"> 
                 <img src="${movie.Poster}" class="movie__img"> 
