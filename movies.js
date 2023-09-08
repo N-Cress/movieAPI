@@ -1,12 +1,19 @@
 const apiRoute = "http://www.omdbapi.com/?apikey=7d7109ef&s=";
+const indexSearch = localStorage.getItem("query");
+
+function getQuery() {
+    const value = document.querySelector(".search__field").value
+    retrieveMovies(value);
+}
 
 async function retrieveMovies(query) {
+    localStorage.clear();
     try {
     const apiResponse = await fetch(apiRoute + query);
     const jsonResponse = await apiResponse.json();
     const arrayResponse = jsonResponse.Search;
     const htmlTarget = document.querySelector(".movie");
-    console.log(arrayResponse);
+    
     htmlTarget.innerHTML = arrayResponse.slice(0, 6).map((movie) => {
         return `
             <div class="movie__item"> 
@@ -26,5 +33,8 @@ async function retrieveMovies(query) {
 }
 
 setTimeout(() => {
-    retrieveMovies("futurama");
-}, 1000);
+    if (indexSearch) {
+        retrieveMovies(indexSearch);
+    }
+}, 2000);
+

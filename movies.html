@@ -14,10 +14,10 @@
             <img src="./assets/undraw_award.svg" class="nav__logo"> </img>
                 <ul class="nav__list">
                     <li class="nav__list-item blue"> 
-                        <a> Home </a>
+                        <a href="index.html"> Home </a>
                     </li>
                     <li class="nav__list-item"> 
-                        <a> Find a movie </a>
+                        <a href="movies.html"> Find a movie </a>
                     </li>
                     <li class="nav__list-item nav__button"> 
                         <a> CONTACT </a>
@@ -27,8 +27,8 @@
         <div class="nav__search">
             <div class="browse"> Find a movie </div>
             <div class="search__container">
-                <input class="search__field"> 
-                <button class="search__button"> 
+                <input class="search__field" onchange="getQuery()" > 
+                <button class="search__button" onclick="getQuery()"> 
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>

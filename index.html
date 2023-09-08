@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styles.css" rel="stylesheet"> </link>
-    <script src="movies.js"></script>
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/524719cdfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,10 +15,10 @@
                 <img src="./assets/undraw_award.svg" class="nav__logo"> </img>
                     <ul class="nav__list">
                 <li class="nav__list-item blue"> 
-                    <a> Home </a>
+                    <a href="index.html"> Home </a>
                 </li>
                 <li class="nav__list-item"> 
-                    <a> Find a movie </a>
+                    <a href="movies.html"> Find a movie </a>
                 </li>
                 <li class="nav__list-item nav__button"> 
                     <a> CONTACT </a>
@@ -35,9 +35,9 @@
                     FIND YOUR NEXT <span class="blue">"THING"</span> TO BINGE
                 </div>
                 <div class="search__container">
-                    <input placeholder="Search" class="search__field"> 
+                    <input placeholder="Search" onchange="getQuery()" class="search__field"> 
                     <button class="search__button"> 
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass" onclick="getQuery()"></i>
                     </button>
                  </div>
                     

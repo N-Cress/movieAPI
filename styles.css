@@ -15,8 +15,9 @@ ul {
     list-style: none;
 }
 
-nav {
-   
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .blue {
